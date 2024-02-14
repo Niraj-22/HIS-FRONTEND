@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import Select from "react-select";
 import { colorStyles, tags } from "../../constant";
 import { handleTags } from "../../utils/helperFunctions";
+import { fetchDept } from "../../utils/apiCalls";
 const UpdateUser = () => {
   const location = useLocation();
   const userData = location.state;
@@ -41,12 +42,8 @@ const UpdateUser = () => {
   const [selectedOptions, setSelectedOptions] = useState(prefilledTags);
   const navigate = useNavigate();
   const fetch = async () => {
-    try {
-      const response = await axios.get("/admin/departments");
-      setDepartment(response.data);
-    } catch (error) {
-      toast.error("Fetching Failed");
-    }
+    const data = await fetchDept();
+    setDepartment(data);
   };
   useEffect(() => {
     fetch();
