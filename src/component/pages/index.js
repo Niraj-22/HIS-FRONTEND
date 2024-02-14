@@ -8,6 +8,7 @@ import UpdateUser from "./UpdateUser.jsx";
 import Profile from "./Profile";
 import Task from "./AllUsers.jsx";
 import AllUsers from "./AllUsers.jsx";
+import Project from "./Project.jsx";
 
 export {
   AddDepartment,
@@ -20,4 +21,5 @@ export {
   Profile,
   Task,
   AllUsers,
+  Project,
 };

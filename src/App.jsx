@@ -13,8 +13,8 @@ import {
   UpdateUser,
   Profile,
   AllUsers,
+  Project,
 } from "./component/pages";
-import Project from "./component/pages/Project";
 
 function App() {
   return (
