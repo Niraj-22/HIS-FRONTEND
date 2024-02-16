@@ -168,7 +168,7 @@ const Profile = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="flex gap-x-4 ">
+            <div className="flex gap-x-2.5 ">
               <label className="">Department :</label>
 
               <input
