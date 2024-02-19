@@ -5,18 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { PrivateLayout, AdminLayout, PublicLayout } from "./component/layout";
 import { Suspense, lazy } from "react";
 import Loader from "./component/pages/Loader";
-// import {
-//   AddDepartment,
-//   AddUser,
-//   AdminDashboard,
-//   Home,
-//   Login,
-//   PageNotFound,
-//   UpdateUser,
-//   Profile,
-//   AllUsers,
-//   Project,
-// } from "./component/pages";
 const AddDepartment = lazy(() => import("./component/pages/AddDepartment"));
 const AddUser = lazy(() => import("./component/pages/AddUser"));
 const AdminDashboard = lazy(() => import("./component/pages/AdminDashboard"));
